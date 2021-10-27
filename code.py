@@ -55,9 +55,9 @@ def move():
     v = randrange(1,4)
     if v == 1:
         food.y =+ 1
-    else if v == 2:
+    elif v == 2:
         food.x =+ 1
-    else if v == 3:
+    elif v == 3:
         food.y =- 1
     else:
         food.x =- 1
