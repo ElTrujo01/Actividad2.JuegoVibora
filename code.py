@@ -57,7 +57,7 @@ def move():
         food.y =+ 1
     else if v == 2:
         food.x =+ 1
-    else if == 3:
+    else if v == 3:
         food.y =- 1
     else:
         food.x =- 1
