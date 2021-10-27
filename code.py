@@ -60,7 +60,11 @@ def color(): #vector de colores
     c = np.array(['pink','purple','blue','orange','brown'])
     return c
 
-#variables
+bc = color()[randrange(0,4)] #obtencion del color
+fc = color()[randrange(0,4)]
+
+while fc == bc: #evitar que comida y cuerpo sean del mismo color
+    fc = color()[randrange(0,4)]
 
 setup(420, 420, 370, 0)
 hideturtle()
