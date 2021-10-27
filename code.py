@@ -54,13 +54,25 @@ def move():
     
     v = randrange(1,4)
     if v == 1:
-        food.y =+ 1
+        if food.y < 190:
+            food.y += 10
+        else:
+            food.y -= 10
     elif v == 2:
-        food.x =+ 1
+        if food.x < 190:
+            food.x += 10
+        else:
+            food.x -= 10
     elif v == 3:
-        food.y =- 1
+        if food.y > -200:
+            food.y -= 10
+        else:
+            food.y += 10
     else:
-        food.x =- 1
+        if food.x > -200:
+            food.x -= 10
+        else:
+            food.x += 10
         
     square(food.x, food.y, 9, fc)
     update()
