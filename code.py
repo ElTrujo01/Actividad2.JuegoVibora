@@ -48,10 +48,20 @@ def move():
         snake.pop(0)
 
     clear()
-
+    
     for body in snake:
         square(body.x, body.y, 9, bc) #cambio de variables
-
+    
+    v = randrange(1,4)
+    if v == 1:
+        food.y =+ 1
+    else if v == 2:
+        food.x =+ 1
+    else if == 3:
+        food.y =- 1
+    else:
+        food.x =- 1
+        
     square(food.x, food.y, 9, fc)
     update()
     ontimer(move, 100)
