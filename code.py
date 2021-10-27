@@ -13,7 +13,7 @@
 from turtle import *
 from random import randrange
 from freegames import square, vector
-
+import numpy as np
 
 food = vector(0, 0)
 snake = [vector(10, 0)]
@@ -55,6 +55,12 @@ def move():
     square(food.x, food.y, 9, 'green')
     update()
     ontimer(move, 100)
+
+def color(): #vector de colores
+    c = np.array(['pink','purple','blue','orange','brown'])
+    return c
+
+#variables
 
 setup(420, 420, 370, 0)
 hideturtle()
